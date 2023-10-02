@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/projectSection.css">
+    <link rel="stylesheet" href="css/work.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/mobile-nav.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,300,600,700&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body class=".light-mode">
+    <header class="header container">
+    <nav class="header__nav">
+<ul class="list">
+    <li class="list__elements"><a href="#about" class="head__link">About</a></li>
+    <li class="list__elements"><a href="#works" class="head__link">Works</a></li>
+    <li class="list__elements"><a href="#contact" class="head__link">Contacts</a></li>
+    <li class="list__elements"><div class="dash"></div></li>
+    <li class="list__elements"><button onclick="toggleMode()"class="sun b"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+      </svg></button></li>
+    <li class="list__elements"><button class=" btn"><a class="header__res" href="">Resume</a></button></li>
+    <li>
+        <button onclick="mobileNav()" class="header__bars b"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+          </button>
+    </li>
+</ul>
+    </nav>
+    </header>
+    <!--  -->
+    <div class="mobile__nav">
+        <nav class="">
+    <ul class="mobile_list">
+        <li class="mob__list__elements"><a onclick="removeAutoFlow()" href="#about" class="head__link">About</a></li>
+        <li class="mob__list__elements"><a onclick="removeAutoFlow()" href="#works" class="head__link">Works</a></li>
+        <li class="mob__list__elements"><a onclick="removeAutoFlow()" href="#contact" class="head__link">Contacts</a></li>
+        <li class="mob__list__elements"><div class="mob__dash"></div></li>
+        <li class="mob__list__elements"><button onclick="toggleMode()" class="sun__mob b"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+          </svg></button></li>
+        <li class="mob__list__elements"><a href="" class="header__res btn">Resume</a></li>
+    </ul>
+        </nav>
+        </div>
+    <!--  -->
+    <main class="">
+        <section class="section hero__section container">
+            <!-- <div class="img"><img src="moon.jpg" alt="profile pic"></div> -->
+            <h2 class="subtitle">Hi I am Ahmed👋</h2>
+            <h1 class="title">FULL-STACK</br> WEB DEVELOPER.</h1>
+            <p class="describsion">I am <strong class="strong">computer science </strong>enthusiast, I am intrested in software engineering and development.</p>
+           <a href="mailto:syedahmeda313@gmail.com" class="btn hero__btn">Reach out</a>
+        <!-- </div> <div class="hero__btn"> -->
+        </section>
+        <section id="about" class="section abt__section container">
+            <div class="abt__cont">
+                <div class="abt"><h2>About</h2>
+                    <p class="abt__desc">Hello there! I'm Ahmed, Fullstack web developer.I am still learning</p>
+                    <p class="abt__desc">People who know me say I'm obsessed, that's fair, I am very driven and love learning new things</p>
+                    <p class="abt__desc">I made this web page from a YouTube video from  <a href="#">Slaying The Dragon </a>His videos are on front-end web development topics.</p>
+                    <hr class="hr">
+                </div>
+
+                <div class="tech__sec">
+                    <h2>Technologies</h2>
+                    <div class="techn">
+                    <ul><li>HTML</li>
+                    <li>CSS</li>
+                    <li class="strike">JAVASCRIPT</li></ul>
+                    <ul><li class="strike">REACT JS</li>
+                    <li class="strike">BOOTSTRAP</li>
+                    <li class="strike">NODE JS</li></ul>
+                    </div>
+                </div>
+            </div>
+            <div><img src="images/moon.jpg" alt="profile pic" class="abt__img"></div>
+        </section>
+        <section class="section container pro__sec">
+        <div><p class="indigo pro__featured">Featured Project</p>
+            <h1 class="pro__title">SLAYING THE DRAGON</h1>
+        </div>
+            <p class="pro__desc">Cillum voluptate tempor cillum culpa cupidatat labore voluptate ullamco voluptate culpa sunt nulla non. Ad cupidatat dolore quis amet pariatur consectetur ullamco. Officia quis id velit duis cupidatat sunt deserunt do aliquip nulla laboris.</p>
+            <div class="pro__details">
+                <div>
+                    <h2>Tech Stack</h2>
+                    <ul>
+                        <li>TailwindCSS</li>
+                        <li>ReactJS</li>
+                        <li>React-Hook-Form</li>
+                        <li>NextJS</li>
+                        <li>Stripe</li>
+                        <li>Supabase</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Project Type</h2>
+                    <ul>
+                        <li>Fullstack</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Timeline</h2>
+                    <ul>
+                        <li>December 2022 - Present</li>
+                    </ul>
+                </div>
+            </div>
+        <div class="featured__img-container">
+            <div class="feature__img-wrapper">
+                <img class="featured__img" src="images/earth.jpg" alt=""></div>
+            <div class="feature__img-wrapper">
+                <img class="featured__img" src="images/interstellar.jpg" alt=""></div>
+            <div class="feature__img-wrapper">
+                <img class="featured__img" src="images/jupiter.jpg" alt=""></div>
+            <div class="feature__img-wrapper">
+                <img class="featured__img" src="images/galaxy.jpg" alt=""></div>
+        </div>
+        </section>
+        <section id="works" class="section container work__sec">
+            <h2 class="work__title">Projects</h2>
+            <p class="work__desc">Mollit pariatur tempor nisi dolor non consequat magna cupidatat reprehenderit. Aliquip excepteur ullamco aliquip magna est et commodo deserunt ipsum.</p>
+            <div class="works">
+                <div class="work__img-wrapper img1"><img class="work__img" src="images/moon.jpg" alt=""></div>
+            <div class="work__project cont1"><h2>Wax Motif</h2>
+                <p class="work__desc1">Labore magna ut non labore Lorem nisi culpa sint et quis sint. Enim pariatur deserunt do ad exercitation.</p>
+                <p class="work__desc2">Ea ut non cupidatat consequat sint elit ipsum culpa dolor cillum commodo. Do esse excepteur cillum deserunt duis incididunt. Eu tempor ullamco aliqua consectetur incididunt anim dolor sunt laboris adipisicing cupidatat sint.</p>
+                <a href="#" class="btn work__btn">website</a>
+            </div>
+            <!-- </div>
+            <div class="works"> -->
+                <div class="work__img-wrapper img2"><img class="work__img" src="images/moon.jpg" alt=""></div>
+                <div class="work__project cont2"><h2>Draze Force</h2>
+                <p class="work__desc1">Sunt sint labore officia irure. Dolore pariatur nisi deserunt sunt exercitation excepteur do reprehenderit fugiat Lorem sint ut.</p>
+                <p class="work__desc2">Mollit ipsum mollit magna occaecat eiusmod sint fugiat est non adipisicing esse fugiat deserunt minim. Enim occaecat velit eu non amet nostrud officia duis.</p>
+                <a href="#" class="btn work__btn">website</a></div>
+            </div>
+        </section>
+        <section id="contact" class="section container contact__sec">
+            <h2 class="contact__title">Get In Contact</h2>
+            <p class="contact__desc">Whether you are starting a project, have business inquiries or just want to say hi, my inbox is always open so feel free to reach out and I will get back to you as soon as possible.</p>
+            <p class="indigo">Thank you Ramzi Bach</p>
+            <a href="mailto:syedahmeda313@gmail.com" class="btn contact__btn">Reach out</a>
+        </section>
+    </main>
+    <footer class="section container foot">
+<p>~Ahmed~</p>
+    </footer>
+</body>
+<script src="src/main.js"></script>
+</html>

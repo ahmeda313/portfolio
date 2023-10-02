@@ -1,0 +1,37 @@
+.mobile__nav{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:var(--black);
+    display: none;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+}
+.mob__dash{
+    padding-left: 5rem;
+    width: 30px;
+    border-bottom:1px solid var(--slate600);
+}
+.mob__list__elements{
+    list-style-type: none;
+    padding-top:1rem;
+    padding-right: 1.5rem;
+}
+.sun__mob{
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 0;
+    cursor: pointer; 
+    color: var(--slate600);
+    margin-bottom: 1rem;
+}
+.sun__mob:hover{
+    color: var(--rose);
+}
+/* .header__bars:focus .mobile__nav{
+
+
+} */
