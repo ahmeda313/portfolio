@@ -23,3 +23,16 @@ function removeAutoFlow(){
 function toggleMode(){
     document.body.classList.toggle('light-mode');
 }
+
+
+const abt = document.queryselector('.abt_img');
+
+const lazyLoad = function(){
+
+abt.classlist.remove('blur');
+
+}
+
+const abtImgObs = new IntersectionObserver(lazyLoad);
+
+abtImgObs.observe(abt);
