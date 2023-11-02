@@ -25,14 +25,22 @@ function toggleMode(){
 }
 
 
-const abt = document.queryselector('.abt_img');
 
-const lazyLoad = function(){
+const abtImg = document.querySelector('.abt__img');
+const feaImg =document.querySelectorAll('.featured__img');
+const workImg =document.querySelectorAll('.work__img');
 
-abt.classlist.remove('blur');
+const lazyLoad = function(en,ob){
+    const [e] = en;
+    e.target.classList.remove('lazy-img');
+    imgObs.unobserve(e.target)
 
 }
 
-const abtImgObs = new IntersectionObserver(lazyLoad);
+const imgObs = new IntersectionObserver(lazyLoad,{root:null,
+threshold:0.15
+})
 
-abtImgObs.observe(abt);
+imgObs.observe(abtImg);
+feaImg.forEach((img)=>imgObs.observe(img));
+workImg.forEach((img)=>imgObs.observe(img));
