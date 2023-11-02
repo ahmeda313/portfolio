@@ -72,6 +72,12 @@ a{
     color:var(--rose);
 
 }
+img{
+    transition: filter 1s;
+}
+.lazy-img {
+    filter: blur(20px);
+  }
 img,picture,svg,video,canvas{
     display:block;
     user-select: none;
