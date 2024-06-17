@@ -8,9 +8,12 @@
     --black:#070a13;
     --light:#f1f5f9;
     --indigo:#4f46e5;
-    --slate400:#94a3b8;
+    --slate400:#f1f5f9;
+    --slate600:#f1f5f9;
+    --slate800:#f1f5f9;
+    /* --slate400:#94a3b8;
     --slate600:#475569;
-    --slate800:#1e293b;
+    --slate800:#1e293b; */
     --rose:#e11d48;
 }
 html{
@@ -19,9 +22,9 @@ html{
 .light-mode{
     --black:#f1f5f9;
     --light:#070a13;
-    --slate400:#1e293b;
-    --slate600:#475569;
-    --slate800:#1e293b;
+    --slate400:#070a13;
+    --slate600:#070a13;
+    --slate800:#070a13;
 
 }
 body{
