@@ -63,6 +63,9 @@ body{
 .btn:hover{
     transform: translateY(-3px);
 }
+hr{
+    margin-bottom: 1.5rem;
+}
 
 .list{
     list-style: none;
