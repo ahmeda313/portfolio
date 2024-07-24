@@ -29,7 +29,7 @@
     font-size: 0.7rem;
     width: 3rem;
     height: 3rem;
-    fill: white;
+    fill: var(--slate600);
     transition: fill 300ms;
 
 }
