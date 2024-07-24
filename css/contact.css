@@ -15,10 +15,29 @@
     line-height: 1.5em;
     font-weight: 100;
 }
-.contact__btn{
-    margin-top: 1em;
-    font-size: 0.7rem;
+
+.contact__icons{
+    margin-top: 2rem;
+    display: flex;
+    width: 50%;
+    height: 3rem;
+    justify-content: space-around;
+
 }
+
+.contact__btn{
+    font-size: 0.7rem;
+    width: 3rem;
+    height: 3rem;
+    fill: white;
+    transition: fill 300ms;
+
+}
+
+.contact__btn:hover{
+    fill: var(--rose);
+}
+
 .foot{
     text-align: center;
     color: var(--slate800);
@@ -26,3 +45,18 @@
     font-weight: 100;
     letter-spacing: 0.3em;
 }
+
+
+@media (max-width:600px){
+
+    .contact__icons{
+        width: 100%;
+    }
+
+    .contact__btn{
+        height: 2rem;
+        width: 2rem;
+    }
+}
+
+
