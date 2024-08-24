@@ -44,6 +44,11 @@
     fill: var(--rose);
 }
 
+.contact__icons > a[target="_blank"]{
+    cursor: url("../assets/cursor/external-link2.svg"),auto;
+}
+
+
 .foot{
     text-align: center;
     color: var(--slate800);
