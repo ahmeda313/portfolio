@@ -2,8 +2,8 @@
 const scene = new THREE.Scene();
 // scene.background = new THREE.Color(0xe11d48); // Light gray background, change as needed
 
-const camera = new THREE.PerspectiveCamera(55, 700 / 600, 0.1, 1000);
-camera.position.set(0, 2, -20);
+const camera = new THREE.PerspectiveCamera(55, 500 / 400, 0.1, 1000);
+camera.position.set(0, 2, -16);
 camera.lookAt(0, 0, 0);
 
 const canvas = document.getElementById('laptopCanvas');
