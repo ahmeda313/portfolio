@@ -2,8 +2,8 @@
 const scene = new THREE.Scene();
 // scene.background = new THREE.Color(0xe11d48); // Light gray background, change as needed
 
-const camera = new THREE.PerspectiveCamera(55, 500 / 400, 0.1, 1000);
-camera.position.set(0, 2, -16);
+const camera = new THREE.PerspectiveCamera(55, 600 / 400, 0.1, 1000);
+camera.position.set(0, 2, -15);
 camera.lookAt(0, 0, 0);
 
 const canvas = document.getElementById('laptopCanvas');
@@ -14,7 +14,7 @@ const renderer = new THREE.WebGLRenderer({
     powerPreference: "high-performance"
 });
 renderer.setPixelRatio(window.devicePixelRatio);
-renderer.setSize(500, 400);
+renderer.setSize(300, 200);
 renderer.outputEncoding = THREE.sRGBEncoding;
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
 renderer.toneMappingExposure = 1.0;
