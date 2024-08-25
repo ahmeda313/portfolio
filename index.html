@@ -18,6 +18,11 @@
     <meta name="keywords" content="Ahmed, Software, Engineering, Personal Portfolio, Personal Website">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/DRACOLoader.js"></script>
+    <script type="module" src="src/laptopCanvas.js"></script>
 </head>
 <body class=".light-mode">
     <div class="no-print" id="plum-container">
@@ -84,8 +89,9 @@
                     </div>
                 </div>
             </div>
-            <div><img src="https://www.reshot.com/preview-assets/icons/SVEGJXW7QP/avatar-working-SVEGJXW7QP.svg" alt="profile pic" class="abt__img lazy-img">
-
+            <div>
+                <!-- <img src="https://www.reshot.com/preview-assets/icons/SVEGJXW7QP/avatar-working-SVEGJXW7QP.svg" alt="profile pic" class="abt__img lazy-img"> -->
+                <canvas id="laptopCanvas" width="500" height="400"></canvas>
             </div>
         </section>
         <section id="works" class="section container work__sec">
@@ -107,7 +113,7 @@
                 <div class="img3"> <a href="https://github.com/ahmeda313/Feedback-Management" target="_blank"><img class="work__img lazy-img" src="assets/projects/feedback_system.gif"></a></div>
                 <div class="work__project cont3"><h2>Feedback system</h2>
                 <p class="work__desc1">This application can be used to collect feedback from student and admin can see the results and generate pdf document.</p>
-                <p class="work__desc2">This application was made using HTML, CSS, PHP, MySQl. Important library fpdf is used to genrate pdf.</p>
+                <p class="work__desc2">This application was made using HTML, CSS, PHP, MySQl and fpdf library to genrate pdf.</p>
             </div>
 
             </div>
@@ -135,6 +141,6 @@
         <p>~Ahmed~</p>
     </footer>
 </body>
-<script src="src/main.js"></script>
-<script src="src/plum.js" type="module"></script>
+<script defer src="src/main.js"></script>
+<script defer src="src/plum.js" type="module"></script>
 </html>

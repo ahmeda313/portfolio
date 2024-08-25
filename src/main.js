@@ -26,7 +26,7 @@ function toggleMode(){
 
 
 
-const abtImg = document.querySelector('.abt__img');
+// const abtImg = document.querySelector('.abt__img');
 const feaImg =document.querySelectorAll('.featured__img');
 const workImg =document.querySelectorAll('.work__img');
 
@@ -41,6 +41,6 @@ const imgObs = new IntersectionObserver(lazyLoad,{root:null,
 threshold:0.15
 })
 
-imgObs.observe(abtImg);
+// imgObs.observe(abtImg);
 feaImg.forEach((img)=>imgObs.observe(img));
 workImg.forEach((img)=>imgObs.observe(img));
